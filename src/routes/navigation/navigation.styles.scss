@@ -1,0 +1,45 @@
+.navigation {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+  }
+
+
+
+  .nav-links-container {
+    width: 21%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-link {
+      padding: 15px 15px;
+      cursor: pointer;
+    }
+  }
+}
+.sign-in-link{
+  padding: 5px;
+}
+.nav-title {
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  font-family: 'Secular One', 'Paytone One';
+  font-weight:bolder;
+  font-size: 20px;
+  padding: 0px 0px 0px 20px ;
+}
+
+.nav-bar-div {
+  border: 2px solid black;
+  border-radius: 5px;
+}
