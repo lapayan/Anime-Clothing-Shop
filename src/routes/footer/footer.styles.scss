@@ -1,0 +1,42 @@
+.main-footer-container{
+  color: white;
+   background-image: linear-gradient(#7393B3, #FFFFF0);
+  width: 100%;
+  min-height: calc(100vh - 900px);
+  display: grid;
+  grid-gap: 10px;
+  .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  .github-logo{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    }
+  .instagram-logo{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    }
+  .linkedIn-logo{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    }
+  .twitter-logo{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    }
+  }
+  .footer-text-container{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAFA;
+    color:  #899499;
+  }
+}
+.spacer{
+  opacity: 0;
+}
