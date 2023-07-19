@@ -1,7 +1,7 @@
 import {Fragment, useContext} from 'react';
 import { UserContext } from '../../contexts/user.context';
 import {Outlet,Link} from 'react-router-dom';
-import {ReactComponent as Penguin} from '../../assets/penguin.svg';
+import  logo from '../../assets/animeApparel.svg';
 import CartIcon from '../../components/cart-icon/cart-icon.component' ;
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
 import {CartContext} from '../../contexts/cart.context';
@@ -18,10 +18,12 @@ const Navigation = () => {
     <Fragment>
       <div className = 'navigation'>
       <Link className = 'logo-container' to ='/'>
-        <Penguin className = 'logo'/>
+        <img src ={logo} alt= 'logo' className = 'logo'
+        style={{ height: 150, width: 150 }}/>
       </Link>
         <div className = 'nav-title'>
           <h2>Anime Apparel</h2>
+          <p> Clothing Co. </p> 
         </div>
           <div className = 'nav-links-container'>
           <Link className = 'nav-link' to = '/shop'>
@@ -40,7 +42,6 @@ const Navigation = () => {
         </div>
       { isCartOpen && <CartDropdown />}
       </div>
-      <hr className = 'nav-bar-div'/>
       <Outlet/> 
     </Fragment>
   );
